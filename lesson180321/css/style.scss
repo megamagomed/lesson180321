@@ -1,0 +1,13 @@
+@import "./reset";
+@import "./text_setup";
+@import "./colors";
+@import "./navbar";
+@import "./header";
+@import "./story";
+@import "./ability";
+@import "./examples";
+
+.section-navbar-wrapper, header, footer > .section-footer-wrapper, section {
+    max-width: 1360px;
+    margin: auto;
+}

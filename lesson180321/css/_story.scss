@@ -1,0 +1,34 @@
+.section-story {
+    &-wrapper {
+        display: flex;
+        width: 100%;
+        margin-top: 268px;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+
+    &__image {
+        background-image: url(../img/circle_man.png);
+        height: 514px;
+        width: 514px;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .herobox {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 690px;
+        height: 220px;
+        &__title {
+            font-size: 45px;
+        }
+        &__paragraph {
+            font-family: $segoe;
+            font-size: 14px;
+            color: #086972;    
+        }
+    }
+    }
+}

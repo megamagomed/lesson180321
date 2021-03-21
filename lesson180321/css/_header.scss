@@ -1,0 +1,56 @@
+.section-header {
+    &-wrapper {
+        display: flex;
+        
+        margin-top: 290px;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        .herobox {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 493px;
+            height: 287px;
+            &__title {
+                h2 {
+                    font-family: $segoe;
+                    font-size: 30px;
+                    color: #086972;
+                    line-height: 53px;
+                }
+                h1 {
+                    font-size: 45px;
+                   
+                }
+            }
+            &__subtitle {
+                h2 {
+                    font-family: $segoe;
+                    font-size: 25px;
+                    color: #086972; 
+                    width: 493px;
+                }
+            }
+            &__calltoaction {
+                button {
+                width: 195px;
+                height: 40px;
+                background-color: #111E43;
+                border-radius: 5px;
+                font-size: 15px;
+                color: #E2F3F5
+                }
+            }    
+        }
+        &__image {
+            background-image: url(../img/Video.png);
+            height: 560px;
+            width: 674px;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+    }   
+    
+}

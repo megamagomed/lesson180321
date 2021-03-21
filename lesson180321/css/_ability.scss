@@ -1,0 +1,24 @@
+.section-ability {
+    &-wrapper {
+        display: flex;
+        margin-top: 100px;
+        align-items: center;
+        flex-direction: column;
+        &__title {
+        font-size: 40px;
+        margin-bottom: 50px;
+        }
+        .icons {
+            display: flex;
+            justify-content: space-between;
+            width: 903px;
+            &__html, &__css, &__js {
+                border-radius: 50%;
+                width: 214px;
+                height: 214px;
+                background-color: red;
+                text-align: center;
+            }
+        }
+    }
+}
