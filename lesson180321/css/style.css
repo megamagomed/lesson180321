@@ -379,6 +379,11 @@ a {
   font-family: "Segoe Print", serif;
 }
 
+/**
+*
+* Testing
+*
+**/
 .section-navbar {
   width: 100%;
   background-color: #086972;
@@ -412,12 +417,36 @@ a {
   display: flex;
 }
 
+@media (max-width: 360px) {
+  .section-navbar-wrapper .links .menu-hamburger {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    background-color: white;
+  }
+}
+
 .section-navbar-wrapper .links__link a {
   font-family: "Arial", sans-serif;
   color: white;
   text-decoration: none;
   font-size: 16px;
   margin: 0 12.5px;
+}
+
+@media (max-width: 360px) {
+  .section-navbar-wrapper .links__link {
+    display: none;
+  }
 }
 
 .section-header-wrapper {
@@ -562,15 +591,55 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 903px;
 }
 
 .section-ability-wrapper .icons__html, .section-ability-wrapper .icons__css, .section-ability-wrapper .icons__js {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
-  width: 214px;
-  height: 214px;
-  background-color: red;
-  text-align: center;
+  background-color: #17B978;
+  position: relative;
+  margin: 0 62.5px;
+}
+
+.section-ability-wrapper .icons__html::before, .section-ability-wrapper .icons__css::before, .section-ability-wrapper .icons__js::before {
+  content: '';
+  position: absolute;
+  top: 35px;
+  bottom: 35px;
+  left: 35px;
+  right: 35px;
+  background-color: #111E43;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.section-ability-wrapper .icons__html h5, .section-ability-wrapper .icons__css h5, .section-ability-wrapper .icons__js h5 {
+  color: #E2F3F5;
+  font-size: 18px;
+  z-index: 2;
+}
+
+.section-ability-wrapper .icons__html::after, .section-ability-wrapper .icons__css::after, .section-ability-wrapper .icons__js::after {
+  content: "";
+  background-color: #E2F3F5;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-clip-path: polygon(0 1%, 56% 1%, 56% 51%, 0 72%);
+          clip-path: polygon(0 1%, 56% 1%, 56% 51%, 0 72%);
 }
 
 .section-examples-wrapper {

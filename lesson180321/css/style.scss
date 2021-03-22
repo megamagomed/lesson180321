@@ -1,5 +1,6 @@
 @import "./reset";
 @import "./text_setup";
+@import "./breakpoints";
 @import "./colors";
 @import "./navbar";
 @import "./header";
@@ -8,6 +9,7 @@
 @import "./examples";
 @import "./contact";
 @import "./footer";
+
 
 .section-navbar-wrapper, header, footer > .section-footer-wrapper, section {
     max-width: 1360px;
