@@ -1,0 +1,24 @@
+.section-footer {
+    &-wrapper {
+        display: flex;
+        background-color: #E2F3F5;
+        height: 279px;
+        flex-direction: column;
+        align-items: center;
+        &__title {
+            font-size: 30px;
+            color: #111E43;
+            padding-top: 73px;
+            padding-bottom: 14px;
+        }
+        &-social {
+            display: flex;
+            justify-content: space-between;
+            &__icon {
+                width: 39px;
+                height: 39px;
+            }
+        }
+    }
+
+}
